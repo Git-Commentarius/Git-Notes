@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <HashRouter basename={process.env.PUBLIC_URL}>
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/redirect" component={RedirectSuccessful}></Route>
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home}></Route>
+        <Route path={process.env.PUBLIC_URL"/redirect" component={RedirectSuccessful}></Route>
       </HashRouter>
     </div>
   );

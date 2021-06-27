@@ -5,9 +5,9 @@ import RedirectSuccessful from "./views/Redirect";
 function App() {
   return (
     <div>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter >
         <Route exact path="/" component={Home}></Route>
-        <Route path="/redirect" component={RedirectSuccessful}></Route>
+        <Route path="/redirect/" component={RedirectSuccessful}></Route>
       </HashRouter>
     </div>
   );
