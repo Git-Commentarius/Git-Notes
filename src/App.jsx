@@ -1,14 +1,14 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Redirect } from "react-router-dom";
-import Home from "../views/Home";
-import RedirectSuccessful from "../views/Redirect";
+import { Route, BrowserRouter as Router, HashRouter } from "react-router-dom";
+import Home from "./views/Home";
+import RedirectSuccessful from "./views/Redirect";
 function App() {
   return (
     <div>
-      <Router>
+      <HashRouter>
         <Route exact path="/" component={Home}></Route>
         <Route path="/redirect" component={RedirectSuccessful}></Route>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
