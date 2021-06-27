@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "homepage": "https://git-commentarius.github.io/Git-Notes/",
+  "homepage": "https://https://git-commentarius.github.io/Git-Notes/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
